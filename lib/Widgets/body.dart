@@ -1,5 +1,6 @@
 import 'package:final_year_project/Widgets/headWithSearch.dart';
 import 'package:final_year_project/Widgets/titleWithButton.dart';
+import 'package:final_year_project/module/List.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:final_year_project/module/RecomendDslr.dart';
@@ -12,10 +13,11 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           HeadWithSearch(),
+
           TitleWithMoreBtn(title: "Cameras",press: (){},),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: ListDslrs(),
+            child: ListDslrs()
           ),
 
           TitleWithMoreBtn(title: "FootWere",press: (){},),
